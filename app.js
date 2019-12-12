@@ -12,8 +12,7 @@ window.fetch(SportsApiUrl).then(data => {
         let output = '';
         for(let sports of sportsData) {
             output += `
-            
-            <h1 class="h1title">${sports.title}</h1>
+            <h1 class="h1title"><a href="${sports.title}"target=_blank>${sports.title}</a></h1>
             <p>${sports.description}</p>
             <img src = "${sports.urlToImage}" />
             <p>${sports.publishedAt}</p>
@@ -35,7 +34,7 @@ window.fetch(BusinessApiUrl).then(data => {
         for(let business of businessData) {
             output += `
             
-            <h1 class="h1title">${business.title}</h1>
+            <h1 class="h1title"><a href="${business.title}"target=_blank>${business.title}</a></h1>
             <p>${business.description}</p>
             <img src = "${business.urlToImage}" />
             <p>${business.publishedAt}</p>
@@ -56,7 +55,7 @@ window.fetch(EntertainmentApi).then(data => {
         for(let entertainment of entertainmentData) {
             output += `
             
-            <h1 class="h1title">${entertainment.title}</h1>
+            <h1 class="h1title"><a href="${entertainment.title}"target=_blank>${entertainment.title}</a></h1>
             <p>${entertainment.description}</p>
             <img src = "${entertainment.urlToImage}" />
             <p>${entertainment.publishedAt}</p>

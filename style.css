@@ -13,29 +13,41 @@ h1.display-5 {
     font-weight: bold;
     font-size: 20px;
 }
+h1.display-6 {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    text-shadow: 1px 1px 1px black ;
+    padding-bottom: 10px;
+    margin: 0px 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 40px;
+}
 img {
     width: 100%;
     border: 1px solid #ccc;
     padding: 7px;
     background: #fff;
 }
-#left {
-    border-right: 2px solid #ccc;
+#left,
+#right {
+    border-right: 2px solid red;
     padding: 10px;
-    margin: 10px 9px;
+    margin: 10px 0px;
     background: #fff;
 }
-#middle {
+#middleBlock {
     border-right: 2px solid #ccc;
     padding: 10px;
-    margin: 10px 9px;
+    margin: 1px 70px;
     background: #fff;
+}
+#middleBlock .newsh1{
+    border-bottom: none;
 }
 #right {
-    border-right: 2px solid #ccc;
-    padding: 10px;
-    margin: 10px 9px;
-    background: #fff;
+    border-left: 2px solid red !important;
+    border-right: none !important;
 }
 .newsh1 {
     color: red;
@@ -78,3 +90,22 @@ img {
     padding: 13px 0px;
 }
 
+
+/*weather css*/
+.card-body {
+    position: relative;
+}
+.card-body img {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+}
+#template {
+    background: skyblue;
+    color: #fff;
+    padding: 10px;
+    height: 170px;
+    margin: 18px;
+}
